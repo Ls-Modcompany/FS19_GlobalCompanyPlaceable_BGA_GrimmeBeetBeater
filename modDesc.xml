@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="44">
+	<author>LS-Modcompany / Lunchbox, kevink98</author>
+    <version>1.0.0.0</version>
+    
+	<title>
+        <en>GlobalCompany - BGA with Grimme BeetBeater</en>
+        <de>GlobalCompany - BGA mit Grimme BeetBeater</de>
+    </title>
+    
+	<description>
+		<en><![CDATA[
+
+Production / Hour:  Liter
+
+Required Inputs: 
+Output: 
+
+Information: Mod is only usable in combination with GlobalCompany!]]>
+		</en>
+		<de><![CDATA[
+
+Produktion / Stunde:  Liter
+
+Benötigte Rohstoffe: 
+Produkt: 
+
+Information: Mod nur in Verbindung mit GlobalCompany spielbar!]]>
+		</de>
+	</description>
+    
+	<iconFilename>icon_seedmaker.dds</iconFilename>
+    <multiplayer supported="true"/>  
+	
+	<l10n>
+		<text name="function_bga_grimmeBeetBeater">
+			<en><![CDATA[]]></en>
+			<de><![CDATA[]]></de>
+		</text>		
+	</l10n>	
+	
+	<extraSourceFiles>
+		<sourceFile filename="GC_Checker.lua" />
+    </extraSourceFiles>
+	
+	<globalCompany minimumVersion="1.0.0.0" />
+  	
+	<storeItems>
+        <storeItem xmlFilename="bga_grimmeBeetBeater.xml"/>
+    </storeItems>
+
+    <brands>
+        <brand name="GCPLACEABLE" title="GlobalCompany Placeable" image="../FS19_GlobalCompany/brand_placeable.dds"/>
+    </brands>
+</modDesc>
