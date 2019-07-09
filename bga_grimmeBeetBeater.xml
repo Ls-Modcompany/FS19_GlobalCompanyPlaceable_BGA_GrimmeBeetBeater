@@ -52,8 +52,7 @@
 
 			<registerLoadingTriggers>
 				<loadingTrigger name="LoadingTrigger" triggerNode="trigger" fillLitersPerSecond="500" autoStart="false">
-					<!--dischargeInfo dischargeNode="dischargeNode" /-->
-					<sounds fillSoundIdentifier="fillSound01" />
+					<sounds geSoundNode="audio1" />
 				</loadingTrigger>
 			</registerLoadingTriggers>
 			
@@ -77,20 +76,11 @@
 					<fillVolumes>
 						<volume node="Fillvolume1" />
 					</fillVolumes>
-
-					<conveyor>
-						<shader node="belt01" scrollLength="0.775" scrollSpeed="0.13" direction="X" invers="true" />
-						<shader node="belt02" scrollLength="3.84" scrollSpeed="0.13" direction="X" />
-						<shader node="belt04" scrollLength="5.82" scrollSpeed="0.13" direction="X" />
-					</conveyor>
-					<conveyorEffect>
-						<shader node="beltEffect" scrollLength="0.775" scrollSpeed="0.13" direction="X" invers="true" />
-					</conveyorEffect>
 				</inputProduct>
 				<inputProduct name="IP_SILAGE" capacity="40000" title="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_Input2">
 					<fillTypes>
 						<fillType name="silage" />
-					</fillTypes>				
+					</fillTypes>		
 					
 					<purchase fixedPricePerLitre="1.3" />
 					
@@ -123,7 +113,9 @@
 			<productLines>
 				<productLine autoLineStart="true" outputPerHour="10000" title="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_seed" showInGUI="true">
 					<inputs>
-						<inputProduct name="IP_GRIMME" percent="100" />
+						<inputProduct name="IP_GRIMME" percent="100">
+							<income pricePerLiter="0.2" />
+						</inputProduct>
 					</inputs>					
 					<outputs>
 						<outputProduct name="OP_DIGESTATE" percent="100" />
@@ -144,22 +136,45 @@
 							<rotationNode node="Rolle01" rotationAxis="X" rotationSpeed="300" />
 							<rotationNode node="Rolle02" rotationAxis="X" rotationSpeed="-300" />
 						</rotationNodes>
+						<conveyors>
+							<shader node="belt01" scrollLength="0.775" scrollSpeed="0.13" direction="X" invers="true" />
+							<shader node="belt02" scrollLength="3.84" scrollSpeed="0.13" direction="X" />
+							<shader node="belt04" scrollLength="5.82" scrollSpeed="0.13" direction="X" />
+						</conveyors>						
+						<conveyorEffects>
+							<shader node="beltEffect" productName="IP_GRIMME" scrollLength="0.775" scrollSpeed="0.13" />
+						</conveyorEffects>	
+						<effectTypes>			
+							<particleSystems>
+								<particleEffect node="silageEmitter" file="particleSystem/silageEmitter.i3d" />
+							</particleSystems>		
+						</effectTypes>	
+						<sounds>
+							<sound geSoundNode="audio2" />
+						</sounds>
 					</operatingParts>
-					<productSale title="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productSale_bga">
-						<incomePerHour newFarmer="200" farmManager="150" startFromScratch="100" />
-					</productSale>
 				</productLine>
 				<productLine autoLineStart="true" outputPerHour="10000" title="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_seed" showInGUI="true">
 					<inputs>
-						<inputProduct name="IP_SILAGE" percent="100" />
+						<inputProduct name="IP_SILAGE" percent="100">
+							<income pricePerLiter="0.2" />
+						</inputProduct>
 					</inputs>					
 					<outputs>
 						<outputProduct name="OP_DIGESTATE" percent="100" />
 					</outputs>					
 					<playerTrigger playerTriggerNode="PlayerTriggerLine2" showPopupUI="true"/>					
 					<operatingParts>
+						<rotationNodes>
+							<rotationNode node="Schnecke01" rotationAxis="X" rotationSpeed="350" />
+							<rotationNode node="Schnecke02" rotationAxis="X" rotationSpeed="350" />
+							<rotationNode node="Schnecke03" rotationAxis="X" rotationSpeed="350" />
+							<rotationNode node="Schnecke04" rotationAxis="X" rotationSpeed="350" />
+						</rotationNodes>
+						<sounds>
+							<sound geSoundNode="audio3" />
+						</sounds>
 					</operatingParts>
-
 				</productLine>
 			</productLines>	
 			
@@ -194,6 +209,17 @@
 				<i3dMapping id="belt02" node="1|0|1" />
 				<i3dMapping id="belt04" node="1|0|14" />
 				<i3dMapping id="beltEffect" node="1|0|15" />
+
+				<i3dMapping id="Schnecke01" node="1|1|1" />
+				<i3dMapping id="Schnecke02" node="1|1|2" />
+				<i3dMapping id="Schnecke03" node="1|1|3" />
+				<i3dMapping id="Schnecke04" node="1|1|4" />
+
+				<i3dMapping id="silageEmitter" node="1|1|7" />
+
+				<i3dMapping id="audio1" node="0|4|0|2" />
+				<i3dMapping id="audio2" node="0|3|0|3" />
+    			<i3dMapping id="audio3" node="0|3|1|2" />
 			</i3dMappings>				
 		</productionFactory>
 	</productionFactories>
