@@ -10,7 +10,7 @@
         <brand>GCPLACEABLE</brand>
         <specs>
             <capacity></capacity>
-            <fillTypes>sugarBeet silage digestate</fillTypes>
+            <fillTypes>sugarBeet silage liquidmanure digestate</fillTypes>
         </specs>
 		<functions>
 			<function>$l10n_function_bga_grimmeBeetBeater</function>
@@ -48,18 +48,13 @@
 			<registerUnloadingTriggers>
 				<unloadingTrigger name="UnloadingTriggerGrimme" exactFillRootNode="exactFillRootNode1" />
 				<unloadingTrigger name="UnloadingTriggerSilage" exactFillRootNode="exactFillRootNode2"/>
+				<unloadingTrigger name="UnloadingTriggerLiquidManure" exactFillRootNode="exactFillRootNode3" />
 			</registerUnloadingTriggers>
 
 			<registerLoadingTriggers>
 				<loadingTrigger name="LoadingTrigger" triggerNode="trigger" fillLitersPerSecond="500" autoStart="false">
 					<sounds>
-						<!-- <fillingSample file="$data/sounds/tools/slurry/garant_pump_big_loop.ogg" innerRadius="5.0" outerRadius="80.0" fadeOut="0.1">
-							<volume indoor="0.20" outdoor="1.0" />
-							<pitch indoor="1.0" outdoor="1.0" />
-							<lowpassGain indoor="0.50" outdoor="1.00" />
-						</fillingSample> -->
-						
-						<fillingSample template="SLURRY_01" linkNode="0" /> <!-- You can list a filename like above or use a templete. This is the same with 'operatingParts.sounds' -->
+						<fillingSample template="SLURRY_01" linkNode="0" />
 					</sounds>
 				</loadingTrigger>
 			</registerLoadingTriggers>
@@ -105,6 +100,22 @@
 						<volume node="Fillvolume2" />
 					</fillVolumes>
 				</inputProduct>
+				
+				<inputProduct name="IP_LIQUIDMANURE" capacity="100000" title="$l10n_fillType_liquidManure">
+					<fillTypes>
+						<fillType name="liquidmanure" />
+					</fillTypes>		
+					
+					<purchase fixedPricePerLitre="1.3" />
+					
+					<inputMethods>
+						<unloadingTrigger name="UnloadingTriggerLiquidManure"/>
+					</inputMethods>				
+					
+					<digitalDisplays>
+						<display displayType="LEVEL" numbers="IN_Display3" emptyNumberColor="1 0 0 1" numberColor="1 1 0 1" fullNumberColor="0 1 0 1"/>
+					</digitalDisplays>
+				</inputProduct>
 			</registerInputProducts>
 			
 			<registerOutputProducts>
@@ -120,7 +131,7 @@
 			</registerOutputProducts>
 			
 			<productLines>
-				<productLine autoLineStart="true" outputPerHour="10000" title="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_seed" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="10000" title="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_1" showInGUI="true">
 					<inputs>
 						<inputProduct name="IP_GRIMME" percent="100">
 							<income pricePerLiter="0.2" />
@@ -150,36 +161,19 @@
 								<animationNode node="Rolle02" rotAxis="1" rotSpeed="-300" />								
 								
 								<animationNode class="ScrollingAnimation" node="belt01" scrollSpeed="-0.13" scrollLength="1" shaderParameterName="offsetUV" shaderParameterComponent="1" turnOnFadeTime="0.3" turnOffFadeTime="2"/>
-								<animationNode class="ScrollingAnimation" node="belt02" scrollSpeed="-0.13" scrollLength="3.84" shaderParameterName="offsetUV" shaderParameterComponent="1" turnOnFadeTime="0.3" turnOffFadeTime="1"/>
+								<animationNode class="ScrollingAnimation" node="belt02" scrollSpeed="0.13" scrollLength="3.84" shaderParameterName="offsetUV" shaderParameterComponent="1" turnOnFadeTime="0.3" turnOffFadeTime="1"/>
 								<animationNode class="ScrollingAnimation" node="belt04" scrollSpeed="0.13" scrollLength="5.82" shaderParameterName="offsetUV" shaderParameterComponent="1" turnOnFadeTime="0.3" turnOffFadeTime="1"/>						
 							</animationNodes>						
 						</animationNodeGroups>
 						
 						<effectTypes>
 							<materialHolder>
-								<effects productName="IP_GRIMME"> <!-- To use productName all effects in the group should support the fillTypes or they may not display -->
+								<effects productName="IP_GRIMME">
 									<effectNode effectClass="MorphPositionEffect" effectNode="beltEffect" materialType="belt" delay="0" fadeTime="1.5" speed="0.9" scrollLength="0.775" scrollSpeed="0.13"/>
 									<effectNode effectClass="ParticleEffect" effectNode="sugarBeetEmitter" particleType="UNLOADING" delay="1.5" lifespan="0.21"  />
 								</effects>
 							</materialHolder>
-						</effectTypes>						
-						
-						<!-- EXAMPLES: without start stop -->
-						<!-- <sounds>
-							<sound geSoundNode="audio2" /> 
-							
-							<sound>
-								<sample template="HARVESTER_TOOL_ROPA_WORK" linkNode="audio2"/>
-							</sound>
-							
-							<sound>
-								<sample linkNode="audio2" file="$data/sounds/tools/slurry/garant_pump_big_loop.ogg" innerRadius="5.0" outerRadius="80.0" fadeOut="0.1">
-									<volume indoor="0.20" outdoor="1.0" />
-									<pitch indoor="1.0" outdoor="1.0" />
-									<lowpassGain indoor="0.50" outdoor="1.00" />
-								</sample>	
-							</sound>
-						</sounds> -->		
+						</effectTypes>			
 
 						<operateSounds>
 							<start template="HARVESTER_TOOL_ROPA_START" linkNode="audio2" />							
@@ -189,7 +183,7 @@
 					</operatingParts>
 				</productLine>
 				
-				<productLine autoLineStart="true" outputPerHour="10000" title="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_seed" showInGUI="true">
+				<productLine autoLineStart="true" outputPerHour="10000" title="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_2" showInGUI="true">
 					<inputs>
 						<inputProduct name="IP_SILAGE" percent="100">
 							<income pricePerLiter="0.2" />
@@ -219,15 +213,31 @@
 								</effects>
 							</materialHolder>
 						</effectTypes>	
-						
-						<!-- <sounds>
-							<sound geSoundNode="audio3" />
-						</sounds> -->
-						
+
 						<operateSounds>
 							<start template="SILAGE_MIX_START_01" linkNode="audio3" />							
 							<stop template="SILAGE_MIX_STOP_01" linkNode="audio3" />
 							<run template="SILAGE_MIX_LOOP_01" linkNode="audio3" />
+						</operateSounds>
+					</operatingParts>
+				</productLine>
+
+				<productLine autoLineStart="true" outputPerHour="10000" title="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_3" showInGUI="true">
+					<inputs>
+						<inputProduct name="IP_LIQUIDMANURE" percent="100">
+							<income pricePerLiter="0.2" />
+						</inputProduct>
+					</inputs>					
+					
+					<outputs>
+						<outputProduct name="OP_DIGESTATE" percent="100" />
+					</outputs>					
+					
+					<playerTrigger playerTriggerNode="PlayerTriggerLine3" showPopupUI="true"/>					
+					
+					<operatingParts>		
+						<operateSounds>
+							<run template="SLURRY_03" linkNode="audio3" />
 						</operateSounds>
 					</operatingParts>
 				</productLine>
@@ -241,11 +251,15 @@
 				<i3dMapping id="IN_Display1_1" node="0|3|0|2" />
 				<i3dMapping id="exactFillRootNode2" node="0|3|1|0" />
 				<i3dMapping id="IN_Display2" node="0|3|1|1" />
+				<i3dMapping id="exactFillRootNode3" node="0|3|2|0" />
+    			<i3dMapping id="IN_Display3" node="0|3|2|1" />
 				<i3dMapping id="trigger" node="0|4|0|0" />
 				<i3dMapping id="OP_Display" node="0|4|0|1" />
 				<i3dMapping id="PlayerTriggerLine1" node="0|5" />
 				<i3dMapping id="PlayerTriggerLine2" node="0|6" />
+				<i3dMapping id="PlayerTriggerLine3" node="0|7" />
 				<i3dMapping id="gui_camera" node="7" />
+
 
 				<i3dMapping id="Walze01" node="1|0|2" />
 				<i3dMapping id="Walze02" node="1|0|3" />
@@ -276,7 +290,25 @@
 				<i3dMapping id="audio1" node="0|4|0|2" />
 				<i3dMapping id="audio2" node="0|3|0|3" />
     			<i3dMapping id="audio3" node="0|3|1|2" />
+    			<i3dMapping id="audio4" node="0|3|2|2" />
 			</i3dMappings>				
 		</productionFactory>
 	</productionFactories>
+
+	<animatedObjects>
+		<animatedObject saveId="door1" >
+            <animation duration="2">
+                <part node="4|0|1|0">
+                    <keyFrame time="0" rotation="0 0 0"/>
+					<keyFrame time="1" rotation="0 160 0"/>
+                </part>                
+            </animation>
+            <controls triggerNode="4|0|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving file="$data/sounds/prefab/gate/gate_loop.wav" loops="0" linkNode="4|0|0" volume="0.6" radius="25" innerRadius="3" fadeOut="0.25"/>
+                <posEnd file="$data/sounds/prefab/gate/gate_opened.wav" linkNode="4|0|0" volume="0.6" radius="25" innerRadius="3" />
+                <negEnd file="$data/sounds/prefab/gate/gate_closed.wav" linkNode="4|0|0" volume="0.6" radius="25" innerRadius="3" />
+            </sounds>
+        </animatedObject>		
+    </animatedObjects>
 </placeable>

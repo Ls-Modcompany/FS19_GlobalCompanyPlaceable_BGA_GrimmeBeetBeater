@@ -9,21 +9,21 @@
     </title>
     
 	<description>
-		<en><![CDATA[
+		<en><![CDATA[With the Grimme BeetBeater, sugar beets are chopped and then fed directly to the BGA. The biogas plant can also be fed with silage and slurry. You receive the income every hour. In addition, fermentation residues are produced.
 
 Production / Hour:  Liter
 
-Required Inputs: 
-Output: 
+Required Inputs: Sugarbeet, silage or liquidmanure
+Output: Digaste and money
 
 Information: Mod is only usable in combination with GlobalCompany!]]>
 		</en>
-		<de><![CDATA[
+		<de><![CDATA[Mit dem Grimme BeetBeater werden Zuckerrüben gehäckselt und dann direkt der BGA zugeführt. Außerdem kann die Biogasanlage mit Silage und Gülle befüttert werden. Du erhälst stündlich die Einnahmen. Zudem wird Gärreste produziert.
 
-Produktion / Stunde:  Liter
+Produktion / Stunde: 10000 Liter
 
-Benötigte Rohstoffe: 
-Produkt: 
+Benötigte Rohstoffe: Zuckerrüben, Silage oder Gülle
+Produkt: Gärreste und Geld
 
 Information: Mod nur in Verbindung mit GlobalCompany spielbar!]]>
 		</de>
@@ -34,8 +34,8 @@ Information: Mod nur in Verbindung mit GlobalCompany spielbar!]]>
 	
 	<l10n>
 		<text name="function_bga_grimmeBeetBeater">
-			<en><![CDATA[]]></en>
-			<de><![CDATA[]]></de>
+			<en><![CDATA[BGA with Grimme BeetBeater]]></en>
+			<de><![CDATA[BGA mit Grimme BeetBeater]]></de>
 		</text>		
 	</l10n>	
 	

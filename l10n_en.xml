@@ -2,11 +2,9 @@
 <l10n>
 	<elements>
 		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryName" v="BGA mit Grimme BeetBeater"/>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryDescription" v="desc"/>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_seed" v=""/>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_Input1" v="Zuckerrüben"/>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_Input2" v="Silage"/>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_Output1" v="Gärreste"/>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productSale_bga" v="BGA Einnahmen"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryDescription" v="Mit dem Grimme BeetBeater werden Zuckerrüben gehäckselt und dann direkt der BGA zugeführt. Außerdem kann die Biogasanlage mit Silage und Gülle befüttert werden. Du erhälst stündlich die Einnahmen. Zudem wird Gärreste produziert."/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_1" v="Grimme BeetBeater"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_2" v="Silagebunker"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_3" v="Gülle"/>
 	</elements>
 </l10n>
