@@ -15,7 +15,7 @@
   <Materials>
     <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
-    <Material name="fx_silage_mat" materialId="5" customShaderId="3">
+    <Material name="fx_silage_mat" materialId="44" customShaderId="3">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <CustomParameter name="psColor" value="1 1 1 1"/>
@@ -28,23 +28,15 @@
 
 
   <Dynamics>
-    <ParticleSystem name="forageEmitter" dynamicId="1" type="sprite" rate="0.25" lifespan="380" maxCount="1000" speed="0.002" speedRandom="0" tangentSpeed="0.01" normalSpeed="1" spriteScaleX="0.5" spriteScaleY="0.5" blendFactor="1" blendInFactor="0" blendOutFactor="1" randomInitRotation="true" deltaRotateMin="-0.0015708" deltaRotateMax="0.0015708" textureAtlasSizeX="4">
+    <ParticleSystem name="forageEmitter" dynamicId="1" type="sprite" rate="0.25" lifespan="800" maxCount="1000" speed="0.002" speedRandom="0" tangentSpeed="0.01" normalSpeed="1" spriteScaleX="0.5" spriteScaleY="0.5" blendFactor="1" blendInFactor="0" blendOutFactor="1" randomInitRotation="true" deltaRotateMin="-0.0015708" deltaRotateMax="0.0015708" textureAtlasSizeX="4">
       <Gravity force="0 -1.5 0"/>
     </ParticleSystem>
   </Dynamics>
 
   <Scene>
-    <Dynamic dynamicId="1" emitterShapeNodeId="12" name="silageEmitter" clipDistance="100" nodeId="11" materialIds="5" distanceBlending="false">
-      <Shape shapeId="2" name="emitShape" nodeId="12" materialIds="4" nonRenderable="true"/>
+    <Dynamic dynamicId="1" emitterShapeNodeId="248" name="silageEmitter" clipDistance="100" nodeId="247" materialIds="44" distanceBlending="false">
+      <Shape shapeId="2" name="emitShape" nodeId="248" materialIds="4" nonRenderable="true"/>
     </Dynamic>
   </Scene>
-
-  <UserAttributes>
-    <UserAttribute nodeId="11">
-      <Attribute name="fillType" type="string" value="silage"/>
-      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
-      <Attribute name="particleType" type="string" value="UNLOADING"/>
-    </UserAttribute>
-  </UserAttributes>
 
 </i3D>

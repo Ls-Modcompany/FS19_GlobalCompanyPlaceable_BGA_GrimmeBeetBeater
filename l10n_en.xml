@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <l10n>
 	<elements>
-		<e k="GlobalCompanyPlaceable_SeedMaker_FactoryName" v="Seed Maker"/>
-		<e k="GlobalCompanyPlaceable_SeedMaker_FactoryDescription" v="This Seed Maker makes seeds from grain. Herbicide is also required."/>
-		<e k="GlobalCompanyPlaceable_SeedMaker_productLine_seed" v="Seed Production"/>
-		<e k="GlobalCompanyPlaceable_SeedMaker_Input1" v="Grain"/>
-		<e k="GlobalCompanyPlaceable_SeedMaker_Input2" v="Herbicide"/>
-		<e k="GlobalCompanyPlaceable_SeedMaker_Output1" v="Seeds"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryName" v="BGA mit Grimme BeetBeater"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryDescription" v="desc"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_seed" v=""/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_Input1" v="Zuckerrüben"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_Input2" v="Silage"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_Output1" v="Gärreste"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productSale_bga" v="BGA Einnahmen"/>
 	</elements>
 </l10n>
