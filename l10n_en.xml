@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <l10n>
 	<elements>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryName" v="BGA mit Grimme BeetBeater"/>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryDescription" v="Mit dem Grimme BeetBeater werden Zuckerrüben gehäckselt und dann direkt der BGA zugeführt. Außerdem kann die Biogasanlage mit Silage und Gülle befüttert werden. Du erhälst stündlich die Einnahmen. Zudem wird Gärreste produziert."/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryName" v="BGA with Grimme BeetBeater"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryDescription" v="With the Grimme BeetBeater Sugar beets are chopped and then fed directly to the BGA for processing. In addition, the biogas plant can be fed with silage and liquid manure. You receive the revenue hourly as the product is processed. In addition, Digestate is produced and stored for your convenience."/>
 		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_1" v="Grimme BeetBeater"/>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_2" v="Silagebunker"/>
-		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_3" v="Gülle"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_2" v="Silage Bunker"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_3" v="Slurry Processing"/>
 	</elements>
 </l10n>
