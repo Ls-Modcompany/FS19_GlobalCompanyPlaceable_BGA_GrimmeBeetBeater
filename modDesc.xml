@@ -29,7 +29,7 @@ Information: Mod nur in Verbindung mit GlobalCompany spielbar!]]>
 		</de>
 	</description>
     
-	<iconFilename>icon_seedmaker.dds</iconFilename>
+	<iconFilename>icon_grimme.dds</iconFilename>
     <multiplayer supported="true"/>  
 	
 	<l10n>

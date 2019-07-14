@@ -169,15 +169,13 @@
 						
 						<effectTypes>
 							<particleSystems>
-								<particleEffect ndoe="sugarBeetEmitter1" file="particleSystem/sugarBeet1.i3d" />
-								<!--particleEffect node="sugarBeetEmitter2" file="particleSystem/sugarBeet2.i3d" />
-								<particleEffect node="sugarBeetEmitter3" file="particleSystem/sugarBeet3.i3d" /-->										
+								<particleEffect node="sugarBeetEmitter1" file="particleSystem/sugarBeet1.i3d" />
+								<!--particleEffect node="sugarBeetEmitter2" file="particleSystem/sugarBeet2.i3d" delay="2.6" />
+								<particleEffect node="sugarBeetEmitter3" file="particleSystem/sugarBeet3.i3d" delay="3.8" /-->										
 							</particleSystems>
 							<materialHolder>
 								<effects productName="IP_GRIMME">
 									<effectNode effectClass="MorphPositionEffect" effectNode="beltEffect" materialType="belt" delay="0" fadeTime="1.5" speed="0.9" scrollLength="3.775" scrollSpeed="-0.53"/>
-									
-									<effectNode effectClass="MorphPositionEffect" effectNode="effectBeltFront" materialType="belt" delay="1.6" fadeTime="1.5" speed="0.9" scrollLength="5.94" scrollSpeed="0.53"/>
 								</effects>
 							</materialHolder>
 						</effectTypes>			
@@ -284,8 +282,6 @@
 				<i3dMapping id="belt02" node="1|0|1" />
 				<i3dMapping id="belt04" node="1|0|14" />
 				<i3dMapping id="beltEffect" node="1|0|15" />
-				
-				<i3dMapping id="effectBeltFront" node="1|0|17"/>
 
 				<i3dMapping id="Schnecke01" node="1|1|1" />
 				<i3dMapping id="Schnecke02" node="1|1|2" />
