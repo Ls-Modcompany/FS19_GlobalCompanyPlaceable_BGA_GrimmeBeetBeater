@@ -3,7 +3,7 @@
     <storeData>
         <name>BGA & Grimme BeetBeater</name>
         <image>store.dds</image>
-        <price>45000</price>
+        <price>150000</price>
         <dailyUpkeep>10</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -169,9 +169,9 @@
 						
 						<effectTypes>
 							<particleSystems>
-								<particleEffect node="sugarBeetEmitter1" file="particleSystem/sugarBeet1.i3d" />
-								<particleEffect node="sugarBeetEmitter2" file="particleSystem/sugarBeet2.i3d" />
-								<particleEffect node="sugarBeetEmitter3" file="particleSystem/sugarBeet3.i3d" />										
+								<particleEffect ndoe="sugarBeetEmitter1" file="particleSystem/sugarBeet1.i3d" />
+								<!--particleEffect node="sugarBeetEmitter2" file="particleSystem/sugarBeet2.i3d" />
+								<particleEffect node="sugarBeetEmitter3" file="particleSystem/sugarBeet3.i3d" /-->										
 							</particleSystems>
 							<materialHolder>
 								<effects productName="IP_GRIMME">

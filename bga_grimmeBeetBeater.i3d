@@ -488,7 +488,7 @@
         <Shape shapeId="14" name="PlayerTriggerLine2" translation="-10.3708 -0.039 -8.25243" rotation="0 60 0" visibility="false" static="true" trigger="true" collisionMask="3145728" clipDistance="300" nodeId="327" materialIds="48" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         <Shape shapeId="14" name="PlayerTriggerLine3" translation="15.1791 -0.039 15.0015" rotation="0 5.77638 0" visibility="false" static="true" trigger="true" collisionMask="3145728" clipDistance="300" nodeId="328" materialIds="48" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         <Shape shapeId="15" name="PlayerTriggerOffice" translation="-0.35 0.0702203 11.7221" scale="0.8 1 1" visibility="false" static="true" trigger="true" collisionMask="3145728" clipDistance="300" nodeId="329" materialIds="48" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <Camera name="workCamera" translation="-5.73124 8.82975 -13.3298" rotation="131.183 -34.4006 180" nodeId="330" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
+        <Camera name="workCamera" translation="-8.65306 15.6316 -20.5705" rotation="130.954 -30.2753 180" nodeId="330" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
       </TransformGroup>
       <TransformGroup name="movingParts" nodeId="331">
         <TransformGroup name="Grimme" translation="0.7 0.221 -11.39" rotation="0 -85 0" nodeId="332">
@@ -508,7 +508,8 @@
           <Shape shapeId="29" name="Rolle02" translation="-0.0875476 3.106 3.60664" nodeId="346" materialIds="23" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="30" name="belt" translation="-0.581285 2.20182 -0.106236" rotation="-180 55.8809 -90" scale="2.23 1.7 1" clipDistance="300" nodeId="347" materialIds="54" castsShadows="true" receiveShadows="true"/>
           <Shape shapeId="31" name="effect" translation="-0.612 2.32561 0.0400313" rotation="3.221 85.008 2.34037" static="true" nodeId="348" materialIds="70" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="32" name="sugarBeetEmitter1" translation="-0.559 3.63146 2.56262" rotation="-180 0 0.00027509" scale="1 0.021 1" clipDistance="100" nodeId="1018" materialIds="48" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="transform" translation="-0.559 3.63146 2.56262" rotation="-180 0 0.00027509" nodeId="1021"/>
+          <Shape shapeId="32" name="sugarBeetEmitter1" translation="-0.559 3.63146 2.56262" rotation="-180 0 0.00027509" clipDistance="100" nodeId="1018" materialIds="48" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <Shape shapeId="32" name="sugarBeetEmitter2" translation="-0.914 3.1644 3.41418" rotation="-0.914 3.1644 3.41418" scale="0.111 0.00173711 1" clipDistance="100" nodeId="1019" materialIds="48" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <Shape shapeId="32" name="sugarBeetEmitter3" translation="0.794 2.89091 3.41418" rotation="-66.339 -90 0" scale="0.184 0.00173711 1" clipDistance="100" nodeId="1020" materialIds="48" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
         </TransformGroup>
@@ -703,7 +704,6 @@
       </TransformGroup>
       <Camera name="gui_camera" translation="29.8704 34.0023 -6.37566" rotation="125.225 74.0479 -180" nodeId="497" fov="60" nearClip="0.1" farClip="10000" orthographicHeight="1"/>
     </TransformGroup>
-    <Light name="light" translation="11.7524 20.3558 2.81528" rotation="-61.3008 -0 -30" nodeId="567" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" numShadowMapSplits="3" shadowMapSplitDistance0="16.5466" shadowMapSplitDistance1="35.9759" shadowMapSplitDistance2="80" shadowMapSplitDistance3="80" decayRate="4" range="500"/>
   </Scene>
 
   <UserAttributes>
