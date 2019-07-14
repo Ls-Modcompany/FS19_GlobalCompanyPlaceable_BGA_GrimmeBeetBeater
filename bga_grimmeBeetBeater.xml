@@ -162,17 +162,20 @@
 								<animationNode node="Rolle01" rotAxis="1" rotSpeed="300" />
 								<animationNode node="Rolle02" rotAxis="1" rotSpeed="-300" />								
 								
-								<!-- <animationNode class="ScrollingAnimation" node="belt01" scrollSpeed="-0.53" scrollLength="10" shaderParameterName="offsetUV" shaderParameterComponent="1" turnOnFadeTime="0.3" turnOffFadeTime="3"/> -->
-								<animationNode class="ScrollingAnimation" node="belt02" scrollSpeed="-0.53" scrollLength="3.84" shaderParameterName="offsetUV" shaderParameterComponent="1" turnOnFadeTime="0.3" turnOffFadeTime="2.5"/>
-								<animationNode class="ScrollingAnimation" node="belt04" scrollSpeed="0.53" scrollLength="5.82" shaderParameterName="offsetUV" shaderParameterComponent="1" turnOnFadeTime="0.3" turnOffFadeTime="2.5"/>						
+								<animationNode class="ScrollingAnimation" node="belt02" scrollSpeed="0.13" scrollLength="3.84" shaderParameterName="offsetUV" shaderParameterComponent="1" turnOnFadeTime="0.3" turnOffFadeTime="2.5"/>
+								<animationNode class="ScrollingAnimation" node="belt04" scrollSpeed="0.13" scrollLength="5.82" shaderParameterName="offsetUV" shaderParameterComponent="1" turnOnFadeTime="0.3" turnOffFadeTime="2.5"/>						
 							</animationNodes>						
 						</animationNodeGroups>
 						
 						<effectTypes>
+							<particleSystems>
+								<particleEffect node="sugarBeetEmitter1" file="particleSystem/sugarBeet1.i3d" />
+								<particleEffect node="sugarBeetEmitter2" file="particleSystem/sugarBeet2.i3d" />
+								<particleEffect node="sugarBeetEmitter3" file="particleSystem/sugarBeet3.i3d" />										
+							</particleSystems>
 							<materialHolder>
 								<effects productName="IP_GRIMME">
 									<effectNode effectClass="MorphPositionEffect" effectNode="beltEffect" materialType="belt" delay="0" fadeTime="1.5" speed="0.9" scrollLength="3.775" scrollSpeed="-0.53"/>
-									<effectNode effectClass="ParticleEffect" effectNode="sugarBeetEmitter" particleType="UNLOADING" delay="1.5" lifespan="0.51" />
 									
 									<effectNode effectClass="MorphPositionEffect" effectNode="effectBeltFront" materialType="belt" delay="1.6" fadeTime="1.5" speed="0.9" scrollLength="5.94" scrollSpeed="0.53"/>
 								</effects>
@@ -211,11 +214,9 @@
 						</animationNodeGroups>						
 						
 						<effectTypes>
-							<materialHolder>
-								<effects productName="IP_SILAGE">
-									<effectNode effectClass="ParticleEffect" effectNode="silageEmitter" particleType="UNLOADING" delay="0" />
-								</effects>
-							</materialHolder>
+							<particleSystems>
+								<particleEffect node="silageEmitter" file="particleSystem/silageEmitter.i3d" />										
+							</particleSystems>
 						</effectTypes>	
 
 						<operateSounds>
@@ -291,7 +292,9 @@
 				<i3dMapping id="Schnecke03" node="1|1|3" />
 				<i3dMapping id="Schnecke04" node="1|1|4" />
 
-				<i3dMapping id="sugarBeetEmitter" node="1|0|16" />
+				<i3dMapping id="sugarBeetEmitter1" node="1|0|16" />
+				<i3dMapping id="sugarBeetEmitter2" node="1|0|17" />
+				<i3dMapping id="sugarBeetEmitter3" node="1|0|18" />
 				<i3dMapping id="silageEmitter" node="1|1|7" />
 
 				<i3dMapping id="audio1" node="0|4|0|2" />
