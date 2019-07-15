@@ -13,12 +13,12 @@
 
 
   <Materials>
-    <Material name="fx_sugarBeet_mat" materialId="5" customShaderId="3">
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="fx_sugarBeet_mat" materialId="4" customShaderId="3">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <CustomParameter name="psColor" value="1 1 1 1"/>
-    </Material>
-    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
   </Materials>
 
@@ -34,17 +34,9 @@
   </Dynamics>
 
   <Scene>
-    <Dynamic dynamicId="1" emitterShapeNodeId="12" name="sugarBeetEmitter" rotation="0 0 1.84619e-05" clipDistance="100" nodeId="11" materialIds="5" distanceBlending="false">
-      <Shape shapeId="2" name="emitShape" scale="1 0.062 1" nodeId="12" materialIds="4" nonRenderable="true"/>
+    <Dynamic dynamicId="1" emitterShapeNodeId="12" name="sugarBeetEmitter" rotation="0 0 1.84619e-05" clipDistance="100" nodeId="11" materialIds="4" distanceBlending="false">
+      <Shape shapeId="2" name="emitShape" scale="1 0.062 1" nodeId="12" materialIds="5" nonRenderable="true"/>
     </Dynamic>
   </Scene>
-
-  <UserAttributes>
-    <UserAttribute nodeId="11">
-      <Attribute name="fillType" type="string" value="sugarBeet"/>
-      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
-      <Attribute name="particleType" type="string" value="UNLOADING"/>
-    </UserAttribute>
-  </UserAttributes>
 
 </i3D>

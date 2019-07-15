@@ -39,12 +39,4 @@
     </Dynamic>
   </Scene>
 
-  <UserAttributes>
-    <UserAttribute nodeId="11">
-      <Attribute name="fillType" type="string" value="sugarBeet"/>
-      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
-      <Attribute name="particleType" type="string" value="UNLOADING"/>
-    </UserAttribute>
-  </UserAttributes>
-
 </i3D>
