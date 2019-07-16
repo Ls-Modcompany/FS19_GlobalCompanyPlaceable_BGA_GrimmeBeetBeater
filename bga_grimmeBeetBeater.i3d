@@ -88,21 +88,21 @@
     <File fileId="119" filename="textures/lightswitch01_diffuse.dds"/>
     <File fileId="44" filename="textures/maus.dds"/>
     <File fileId="54" filename="textures/mbar.dds"/>
-    <File fileId="5" filename="textures/numbers_diffuse.png"/>
+    <File fileId="5" filename="$data/maps/textures/shared/numbers_diffuse.png"/>
     <File fileId="107" filename="textures/perforated_metal.dds"/>
     <File fileId="74" filename="textures/plywood_dark.dds"/>
     <File fileId="43" filename="textures/roccat.dds"/>
     <File fileId="49" filename="textures/scratch_metal.dds"/>
     <File fileId="11" filename="textures/siloKingTrailedLineDuoConveyor_diffuse.png"/>
-    <File fileId="12" filename="textures/siloKingTrailedLineDuoConveyor_normal.png"/>
-    <File fileId="13" filename="textures/siloKingTrailedLineDuoConveyor_specular.png"/>
+    <File fileId="12" filename="$data/vehicles/siloking/trailedLineDuo1814/siloKingTrailedLineDuoConveyor_normal.png"/>
+    <File fileId="13" filename="$data/vehicles/siloking/trailedLineDuo1814/siloKingTrailedLineDuoConveyor_specular.png"/>
     <File fileId="42" filename="textures/taito.dds"/>
     <File fileId="33" filename="textures/trashContainer_diffuse.dds"/>
     <File fileId="34" filename="textures/trashContainer_normal.dds"/>
     <File fileId="35" filename="textures/trashContainer_specular.dds"/>
-    <File fileId="2" filename="textures/warningStripes_diffuse.dds"/>
-    <File fileId="3" filename="textures/warningStripes_normal.dds"/>
-    <File fileId="4" filename="textures/warningStripes_specular.dds"/>
+    <File fileId="2" filename="$data/maps/textures/shared/warningStripes_diffuse.dds"/>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_normal.dds"/>
+    <File fileId="4" filename="$data/maps/textures/shared/warningStripes_specular.dds"/>
     <File fileId="69" filename="textures/warnzeichen01.dds"/>
     <File fileId="73" filename="textures/warnzeichen02.dds"/>
     <File fileId="30" filename="textures/wood4.dds"/>
