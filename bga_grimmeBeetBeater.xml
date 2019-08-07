@@ -141,7 +141,7 @@
 					</inputs>					
 					
 					<outputs>
-						<outputProduct name="OP_DIGESTATE" percent="100" />
+						<outputProduct name="OP_DIGESTATE" percent="30" />
 					</outputs>					
 					
 					<playerTrigger playerTriggerNode="PlayerTriggerLine1" showPopupUI="true"/>					
