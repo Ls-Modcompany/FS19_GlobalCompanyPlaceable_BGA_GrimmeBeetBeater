@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="44">
 	<author>LS-Modcompany / Lunchbox, kevink98, Eribus</author>
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
     
 	<title>
         <en>GlobalCompany - BGA with Grimme BeetBeater</en>
         <de>GlobalCompany - BGA mit Grimme BeetBeater</de>
+		<fr>GlobalCompany - BGA avec Grimme BeetBeater</fr>
     </title>
     
 	<description>
@@ -16,8 +17,12 @@ Production / Hour:  Liter
 Required Inputs: Sugarbeet, silage or liquidmanure
 Output: Digaste and money
 
-Information: Mod is only usable in combination with GlobalCompany!]]>
-		</en>
+Information: Mod is only usable in combination with GlobalCompany!
+
+Changelog 1.0.1.0:
+- Trigger adjusted
+- Reduce digaste production at input liquidmanure
+- Add language france]]></en>
 		<de><![CDATA[Mit dem Grimme BeetBeater werden Zuckerrüben gehäckselt und dann direkt der BGA zugeführt. Außerdem kann die Biogasanlage mit Silage und Gülle befüttert werden. Du erhälst stündlich die Einnahmen. Zudem wird Gärreste produziert.
 
 Produktion / Stunde: 10000 Liter
@@ -25,8 +30,26 @@ Produktion / Stunde: 10000 Liter
 Benötigte Rohstoffe: Zuckerrüben, Silage oder Gülle
 Produkt: Gärreste und Geld
 
-Information: Mod nur in Verbindung mit GlobalCompany spielbar!]]>
-		</de>
+Information: Mod nur in Verbindung mit GlobalCompany spielbar!
+
+Changelog 1.0.1.0:
+- Trigger angepasst
+- Gärrsteproduktion bei Input Gülle reduziert
+- Sprache Französich hinzugefügt]]></de>
+		<fr><![CDATA[Le BeetBeater de Grimme permet de découper les betteraves afin de les utiliser dans le BGA. L'usine de biogaz peut également recevoir de l'ensilage ou du lisier. Vous recevez de l'argent toutes les heures lors de la production. De plus, vous pouvez récupérer les résidus de fermentation (digestat).
+
+Production/Hour :  1000 litres
+
+Entrée : Betteraves, ensilage ou lisier
+Sortie : Digestat et argent
+
+Information : Ce mod requiert le mod GlobalCompany pour fonctionner !
+
+Changelog 1.0.1.0 :
+- Réglage de la gâchette
+- Réduire la production de digastes à l'entrée du lisier
+- Ajouter langue france]]>
+		</fr>
 	</description>
     
 	<iconFilename>icon_grimme.dds</iconFilename>
@@ -43,7 +66,7 @@ Information: Mod nur in Verbindung mit GlobalCompany spielbar!]]>
 		<sourceFile filename="GC_Checker.lua" />
     </extraSourceFiles>
 	
-	<globalCompany minimumVersion="1.0.0.0" />
+	<globalCompany minimumVersion="1.1.0.0" />
   	
 	<storeItems>
         <storeItem xmlFilename="bga_grimmeBeetBeater.xml"/>

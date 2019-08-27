@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryName" v="BGA avec Grimme BeetBeater"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryDescription" v="Le BeetBeater de Grimme permet de découper les betteraves afin de les utiliser dans le BGA. L'usine de biogaz peut également recevoir de l'ensilage ou du lisier. Vous recevez de l'argent toutes les heures lors de la production. De plus, vous pouvez récupérer les résidus de fermentation (digestat)."/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_1" v="Grimme BeetBeater"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_2" v="Cuve à ensilage"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_3" v="Transformation du lisier"/>
+	</elements>
+</l10n>
