@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+	<elements>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryName" v="沼气站 带甜菜搅拌器"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_FactoryDescription" v="用GrimeBeeBeter切碎甜菜,然后直接喂给BGA进行加工.此外,沼气厂还可以使用青贮饲料和液体肥料.在产品处理过程中,您每小时都会有收入.此外,方便了沼渣的生产和储存."/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_1" v="Grimme 甜菜搅拌机"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_2" v="青贮饲料仓"/>
+		<e k="GlobalCompanyPlaceable_BGA_GrimmeBeetBeater_productLine_3" v="泥浆处理"/>
+	</elements>
+</l10n>
